@@ -51,28 +51,35 @@ body {
     font-feature-settings: "palt";
 }
 
-#about-us {
-     max-width: 1000px;
-     display: flex;
-     justify-content: center;
-     margin: 0 auto;
-     padding: 0 10px;
-
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    align-items: center;
 }
 
-.about-us-photo img{
-    width: 500px;
-    height: 600px;
+#about-us {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-photo {
+    width: 50%;
+}
+
+.about-us-explanation {
+    padding-left: 70px;
+    width: 50%;
+}
+
+.about-us-photo img {
     object-fit: cover;
     border-bottom-right-radius: 70px;
 }
 
-.about-us-explanation {
-    margin: 70px 0 40px 75px;
-}
-
-.about-us-logo img{
-    width: 272px;
+h2 img {
+    height: 77px;
+    width: auto;
 }
 
 .about-us-title {
@@ -91,20 +98,14 @@ body {
 }
 
 #menu {
-    max-width: 1000px;
-    text-align: center;
     margin: 105px auto 100px auto;
-    padding: 0 10px;
-}
-
-.menu img {
-    width: 151px;
-    margin-bottom: 45px;
+    text-align: center;
 }
 
 #menu ul {
     display: flex;
     justify-content: space-between;
+    margin-top: 45px;
 }
 
 #menu li {
@@ -115,7 +116,7 @@ body {
     border-top-right-radius: 40px;
 }
 
-#menu h5 {
+#menu h3 {
     font-size: 38px;
     font-weight: normal;
     color: #d30202;
@@ -137,7 +138,6 @@ body {
 }
 
 .gallery img {
-    width: 245px;
     margin-bottom: 25px;
 }
 
@@ -150,14 +150,10 @@ body {
 }
 
 #event {
-     max-width: 1000px;
      text-align: center;
-     margin: 0 auto;
-     padding: 0 10px;
 }
 
 #event img {
-    width: 174px;
     margin: 70px 0 40px 0;
 }
 
@@ -199,7 +195,6 @@ body {
 }
 
 #access img {
-    width: 213px;
     margin: 70px 0 40px 0;
 }
 
@@ -226,8 +221,10 @@ body {
 }
 
 .flex-item {
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 70px;
     padding: 85px 0 80px 0;
 }
