@@ -6,6 +6,9 @@
     <title>デザインカフェ</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ▼jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -38,8 +41,40 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="hamburger">
+            <span></span>
+        </div>
+
+            <nav class="header-nav-sp">
+                <ul>
+                    <li>
+                        <a href="#about-us">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#menu">MENU</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#event">EVENT</a>
+                    </li>
+                    <li>
+                        <a href="#access">ACCESS</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
         <div class="slider">
-            <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子" />
+            <picture>
+                <source 
+                  srcset="./images/sp_main_vs@2x-100.jpg"
+                  media="(max-width:767px)" />
+              <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子" />
+            </picture>
         </div>
     </header>
 
@@ -54,7 +89,15 @@
                 毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ
                 <br>
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
-            </p>                
+            </p>
+            
+            <p class="sp-top-text-3">
+                毎日を丁寧に大切に過ごしたい。<br>
+                だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間と<br>
+                こだわりのコーヒーを提供したい。<br>
+            </p>
+
         </section>
 
         <section id="about-us" class="wrapper">
@@ -77,6 +120,26 @@
                     サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                 </p>
             </div>
+        </section>
+
+        <section id="sp-about-us" class="wrapper">
+            <h2 class="sp-about-us-logo">
+                <img
+                   src="./images/about_us@2x.png"
+                   alt="ABOUT US"
+                />
+            </h2>
+            <div class="sp-about-us-photo">
+                <img src="./images/about_us@2x-100.jpg" alt="コーヒーの写真" />
+            </div>
+            <p class="sp-about-us-title">
+                私たちが提供する
+                <br>
+                こだわりのコーヒー
+            </p>
+            <p class="sp-about-us-text">
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+            </p>
         </section>
 
         <section id="menu" class="wrapper">
@@ -105,7 +168,6 @@
                         スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                     </p>
                 </li>
-                
             </ul>
         </section>
 
@@ -113,7 +175,7 @@
             <h2 class="gallery">
                 <img src="./images/gallery@2x.png" alt="GALLERY" />
             </h2>
-            <ul>
+            <ul class="pc-gallery">
                 <li>
                     <img src="./images/pc_gallary_05-100.jpg" alt="イベント" />
                 </li>
@@ -130,6 +192,10 @@
                     <img src="./images/pc_gallary_01-100.jpg" alt="ラテアート" />
                 </li>
             </ul>
+
+            <div class="sp-gallery">
+                <img src="./images/mobile_gallery-100.jpg" alt="店内の様子">
+            </div>
         </section>
 
         <section id="event" class="wrapper">
@@ -141,14 +207,17 @@
                     <li>
                         <p>2020.06.23</p>
                         <p class="event-text">7月はイベント出店のため0/0お休みします</p>
+                        <p class="sp-event-text">7月はイベント出店のため0/0・・・</p>
                     </li>
                     <li>
                         <p>2020.03.15</p>
                         <p class="event-text">春の新商品新発売。話題のあのブランドとコラボ</p>
+                        <p class="sp-event-text">春の新商品新発売。話題のあのブランド・・・</p>
                     </li>
                     <li>
                         <p>2020.02.06</p>
                         <p class="event-text">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+                        <p class="sp-event-text">コーヒーの日で30％OFFイベントを・・・</p>
                     </li>
                 </ul>
             </div>
@@ -181,6 +250,15 @@
                     <img src="./images/to_top@2x.png" alt="トップに戻る" />
             </p>
         </footer>
+
+        <script>
+            $(function () {
+                $(".hamburger").click(function () {
+                    $(".hamburger").toggleClass("open");
+                    $(".header-nav-sp").fadeToggle();
+                });
+            });
+        </script>
 
 </body>
 </html>

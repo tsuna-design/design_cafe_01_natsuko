@@ -51,11 +51,19 @@ body {
     font-feature-settings: "palt";
 }
 
+.sp-top-text-3 {
+    display: none;
+}
+
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
     align-items: center;
+}
+
+#sp-about-us {
+    display: none;
 }
 
 #about-us {
@@ -149,6 +157,10 @@ h2 img {
     width: 20%;
 }
 
+#gallery .sp-gallery {
+    display: none;
+}
+
 #event {
      text-align: center;
 }
@@ -187,6 +199,10 @@ h2 img {
 
 .event-text {
     border-bottom: 1px solid #4f260b;
+}
+
+.sp-event-text {
+    display: none;
 }
 
 #access {
@@ -251,4 +267,280 @@ h2 img {
     bottom: 20px;
     right: 20px;
     width: 125px;
+}
+
+.hamburger,
+.header-nav-sp {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .header-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .hamburger span {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        top: 13px;
+        transition: .3s;
+    }
+
+    .hamburger span::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        top: -13px;
+        transition: .3s;
+    }
+
+    .hamburger span::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        bottom: -13px;
+        transition: .3s;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .open span::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    .header-nav-sp {
+        position: absolute;
+        background-color: #000000c4;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header-nav-sp ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .header-nav-sp li {
+        color: #fff;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .top-text-1 {
+        font-size: 25px;
+    }
+
+    .top-text-2 {
+        font-size: 70px;
+    }
+
+    .top-text-3 {
+        font-size: 16px;
+    }
+
+    .about-us-title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+    .top-text {
+        padding: 43px 0 65px 0;
+    }
+    
+    .top-text-1 {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .top-text-2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+
+    .top-text-3 {
+        font-size: 16px;
+    }
+
+    .top-text-3 {
+        display: none;
+    }
+
+    .sp-top-text-3 {
+        display: block;
+        font-size: 16px;
+        line-height: 1.87;
+        font-feature-settings: "palt" 0;
+    }
+
+    #about-us {
+        display: none;
+    }
+
+    #sp-about-us {
+        display: block;
+    }
+
+    h2 {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    h2 img {
+        height: 45px;
+    }
+
+    .sp-about-us-photo {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+
+    .sp-about-us-title {
+        font-size: 36px;
+        padding-bottom: 30px;
+        line-height: 1.25;
+    }
+
+    .sp-about-us-text {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    #menu {
+        margin: 55px auto 0 auto;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #menu li {
+        width: 80%;
+        padding-bottom: 60px;
+    }
+
+    #gallery{
+        margin: 0 auto 30px auto;
+    }
+
+    .gallery img{
+        margin-bottom: 0;
+    }
+
+    #gallery .pc-gallery {
+        display: none;
+    }
+
+    #gallery .sp-gallery {
+        display: block;
+    }
+
+    #gallery .sp-gallery img {
+        width: 100vw;
+        height: 294px;
+        object-fit: cover;
+    }
+
+    #event {
+        margin-bottom: 30px;
+    }
+
+    #event img {
+        margin: 0;
+    }
+
+    .event-box {
+        padding: 20px 0 20px 20px;
+    }
+
+    .event-box li {
+        display: block;
+        text-align: left;
+    }
+
+    .event-box li:last-child {
+        display: block;
+    }
+
+    .event-box p {
+        font-size: 16px;
+    }
+
+    .event-text {
+        display: none;
+    }
+
+    .sp-event-text {
+        display: inline-block;
+        border-bottom: 1px solid #4f260b;
+    }
+
+    #access img {
+        margin: 0;
+    }
+
+    .google-map {
+        position: relative;
+        padding-bottom: 50%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #footer .flex-item {
+        display: block;
+        padding: 45px 45px 45px 20px;
+    }
+
+    #footer .footer-logo {
+        padding-bottom: 35px;
+    }
+
+    #footer li {
+        font-size: 18px;
+        line-height: 0.58;
+    }
+
+    .copyright {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .to-top {
+        width: 100px;
+        height: 100px;
+        bottom: 200px;
+    }
 }
