@@ -157,10 +157,6 @@ h2 img {
     width: 20%;
 }
 
-#gallery .sp-gallery {
-    display: none;
-}
-
 #event {
      text-align: center;
 }
@@ -176,7 +172,6 @@ h2 img {
 }
 
 .event-box ul {
-    display: table;
     margin: 0 auto;
 }
 
@@ -197,8 +192,8 @@ h2 img {
     font-weight: normal;
 }
 
-.event-text {
-    border-bottom: 1px solid #4f260b;
+.event-text a {
+    text-decoration: underline;
 }
 
 .sp-event-text {
@@ -422,7 +417,7 @@ h2 img {
     }
 
     .sp-about-us-photo {
-        width: 100vw;
+        width: 100%;
         margin-bottom: 40px;
     }
 
@@ -468,12 +463,6 @@ h2 img {
         display: block;
     }
 
-    #gallery .sp-gallery img {
-        width: 100vw;
-        height: 294px;
-        object-fit: cover;
-    }
-
     #event {
         margin-bottom: 30px;
     }
@@ -483,7 +472,7 @@ h2 img {
     }
 
     .event-box {
-        padding: 20px 0 20px 20px;
+        padding: 20px;
     }
 
     .event-box li {
@@ -500,12 +489,9 @@ h2 img {
     }
 
     .event-text {
-        display: none;
-    }
-
-    .sp-event-text {
-        display: inline-block;
-        border-bottom: 1px solid #4f260b;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     #access img {
@@ -541,6 +527,7 @@ h2 img {
     .to-top {
         width: 100px;
         height: 100px;
-        bottom: 200px;
+        bottom: 10px;
+        right: 10px;
     }
 }
