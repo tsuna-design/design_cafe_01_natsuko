@@ -128,9 +128,9 @@ h2 img {
     font-size: 38px;
     font-weight: normal;
     color: #d30202;
-    margin: -15px;
+    margin-top: -15px;
     text-align: start;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 #menu p {
@@ -155,6 +155,10 @@ h2 img {
 
 #gallery li {
     width: 20%;
+}
+
+.sp-gallery {
+    display: none;
 }
 
 #event {
@@ -516,7 +520,7 @@ h2 img {
 
     #footer li {
         font-size: 18px;
-        line-height: 0.58;
+        line-height: 1.0;
     }
 
     .copyright {
